@@ -1,0 +1,55 @@
+3.4.1) Getting the 32-bit values J_1 and J_2
+
+  3.4.1.1) Argon2d
+    How do we get access to B with given i/j?
+    Extract function begins from the right hand side, so we don't really have to know the length of B[i][j-1]?
+  
+  3.4.1.2) Argon2i
+    Find out what is meant by each application?
+    Find out what is meant by 2-round G²?
+      Do we have to run it twice?
+    How can we get access to the G² Function?
+    Find out what is meant by counter mode?
+    Find out what is exactly the output of G²?
+    Find out how to code the Little Endian Function?
+    Construction of the second input:
+      r is an input
+      l is given by the i input
+      s is given by the j input (code a function to find in which slice j is)
+      m' is an input by team 5 or calculated by our own from the input m and p
+      t is an input? is it the total number of iterations? Is a pass an iteration?
+      y is an input
+      i WHAT THE FUCK IS I?
+      Zero Block -> easy
+      
+   3.4.1.3) Argon2id
+    if 3.4.1.1 and 3.4.1.2 is clear, this is no big deal
+    Note: r must be an input, to our indexing entity because we query it
+      
+3.4.2) Mapping J_1 and J-2 to reference block index
+  If r = 0 And s = 0 then
+    i' = i
+  else
+    i' = J_2 mod p
+  end if
+  
+  The next step is to get j' by getting the set W:
+  
+    if (j_2 mod p) = i then -- If l is the current lane
+      ------
+      How do we know if the last 3 segments ar computed and finished?
+      How do we know if the blocks are computet in the current segment?
+    else
+      ------
+      Same questions
+    end if
+    
+    W should now contain many inices, how many?
+      We have to know that for |W| (number of elements in W)
+    calculating z should not be a problem
+    W(z) is now j' (the second output)
+    
+  
+  
+    
+  
