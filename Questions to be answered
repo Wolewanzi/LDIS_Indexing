@@ -10,7 +10,7 @@
       Do we have to run it twice?
     How can we get access to the G² Function?
     Find out what is meant by counter mode?
-    Find out what is exactly the output of G²?
+    Find out what is exactly the output of G²? -> we need just 64 bit, but we get 128 64 bit values, what do we do with the other 127 64 bit values???
     Find out how to code the Little Endian Function?
     Construction of the second input:
       r... is an input
@@ -19,7 +19,7 @@
       m'??? is an input by team 5 or calculated by our own from the input m and p
       t??? is an input? is it the total number of iterations? Is a pass an iteration?
       y... is an input
-      i???? WHAT THE FUCK IS I?
+      i???? WHAT THE FUCK IS I? Is it the position defined by j in the current segment? Therefore we have to understand what the counter mode exactly is???
       Zero Block... bunch of 0's
       
    3.4.1.3) Argon2id
